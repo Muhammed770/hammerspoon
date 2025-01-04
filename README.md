@@ -29,7 +29,13 @@ This script automates the process of disconnecting a Bluetooth device when your 
 - Edit (or create) the `init.lua` file and paste the following code:
 
   ```lua
-  local bluetoothDevice = "aa-bb-cc-11-22-33" -- Replace with the MAC address of your Bluetooth device
+  -- Author: @muhammed770
+  -- Source: https://github.com/Muhammed770/hammerspoon
+  -- Github Profile: https://github.com/Muhammed770
+  -- Description: This script disconnects a Bluetooth device when the system goes to sleep and reconnects it when the system wakes up.
+
+
+  local bluetoothDevice = "aa-bb-cc-11-22-33" -- MAC address of the Bluetooth device to connect/disconnect
   local log = hs.logger.new("SleepWatcher", "debug") 
 
   function handleSleepAndWake(eventType)
@@ -44,6 +50,7 @@ This script automates the process of disconnecting a Bluetooth device when your 
 
   caffeinateWatcher = hs.caffeinate.watcher.new(handleSleepAndWake)
   caffeinateWatcher:start()
+
   ```
 
 ### 4. Get Your Bluetooth Device MAC Address
