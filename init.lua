@@ -3,7 +3,7 @@
 -- Github Profile: https://github.com/Muhammed770
 -- Description: This script disconnects a Bluetooth device when the system goes to sleep and reconnects it when the system wakes up.
 
-local bluetoothDevice = "3b-3c-77-13-da-35" -- MAC address of the Bluetooth device to connect/disconnect
+local bluetoothDevice = "aa-bc-47-d3-ee-gg" -- MAC address of the Bluetooth device to connect/disconnect
 local log = hs.logger.new("SleepWatcher", "debug")
 
 local function isBluetoothPoweredOn()
