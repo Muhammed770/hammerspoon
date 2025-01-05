@@ -35,7 +35,7 @@ This script automates the process of disconnecting a Bluetooth device when your 
   -- Description: This script disconnects a Bluetooth device when the system goes to sleep and reconnects it when the system wakes up.
 
 
-  local bluetoothDevice = "aa-bb-cc-11-22-33" -- MAC address of the Bluetooth device to connect/disconnect
+  local bluetoothDevice = "aa-bb-cc-11-22-33" -- MAC address / name of the Bluetooth device to connect/disconnect
   local log = hs.logger.new("SleepWatcher", "debug") 
 
   function handleSleepAndWake(eventType)
