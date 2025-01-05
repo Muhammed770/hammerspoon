@@ -41,10 +41,10 @@ This script automates the process of disconnecting a Bluetooth device when your 
   function handleSleepAndWake(eventType)
       if eventType == hs.caffeinate.watcher.systemWillSleep then
           log.i("System is going to sleep. Attempting to disconnect Bluetooth device.")
-          hs.execute("/opt/homebrew/bin/blueutil --disconnect \"" .. bluetoothDevice .. "\"", false)
+          hs.execute("/opt/homebrew/bin/blueutil --unpair \"" .. bluetoothDevice .. "\"", false)
       elseif eventType == hs.caffeinate.watcher.systemDidWake then
           log.i("System woke up. Attempting to reconnect Bluetooth device.")
-          hs.execute("/opt/homebrew/bin/blueutil --connect \"" .. bluetoothDevice .. "\"", false)
+          hs.execute("/opt/homebrew/bin/blueutil --pair \"" .. bluetoothDevice .. "\"", false)
       end
   end
 
