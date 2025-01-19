@@ -30,7 +30,7 @@ This script automates the process of disconnecting a Bluetooth device when your 
 
   ```lua
   -- Author: @muhammed770
-  -- Source: https://github.com/Muhammed770/hammerspoon
+  -- Source: https://github.com/Muhammed770/hammerspoon-bluetooth-automation
   -- Github Profile: https://github.com/Muhammed770
   -- Description: This script disconnects a Bluetooth device when the system goes to sleep and reconnects it when the system wakes up.
 
